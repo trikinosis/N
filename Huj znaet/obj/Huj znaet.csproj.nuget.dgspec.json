@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\frybe\\OneDrive\\Desktop\\Programming\\Huj znaet\\Huj znaet\\Huj znaet.csproj": {}
+    "C:\\Users\\frybe\\OneDrive\\Desktop\\Programming\\Petya\\N\\Huj znaet\\Huj znaet.csproj": {}
   },
   "projects": {
-    "C:\\Users\\frybe\\OneDrive\\Desktop\\Programming\\Huj znaet\\Huj znaet\\Huj znaet.csproj": {
+    "C:\\Users\\frybe\\OneDrive\\Desktop\\Programming\\Petya\\N\\Huj znaet\\Huj znaet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\frybe\\OneDrive\\Desktop\\Programming\\Huj znaet\\Huj znaet\\Huj znaet.csproj",
+        "projectUniqueName": "C:\\Users\\frybe\\OneDrive\\Desktop\\Programming\\Petya\\N\\Huj znaet\\Huj znaet.csproj",
         "projectName": "Huj znaet",
-        "projectPath": "C:\\Users\\frybe\\OneDrive\\Desktop\\Programming\\Huj znaet\\Huj znaet\\Huj znaet.csproj",
+        "projectPath": "C:\\Users\\frybe\\OneDrive\\Desktop\\Programming\\Petya\\N\\Huj znaet\\Huj znaet.csproj",
         "packagesPath": "C:\\Users\\frybe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\frybe\\OneDrive\\Desktop\\Programming\\Huj znaet\\Huj znaet\\obj\\",
+        "outputPath": "C:\\Users\\frybe\\OneDrive\\Desktop\\Programming\\Petya\\N\\Huj znaet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\frybe\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,6 +37,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "NAudio": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -51,6 +57,9 @@
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App": {
+              "privateAssets": "none"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.425\\RuntimeIdentifierGraph.json"
