@@ -21,7 +21,11 @@ using(var outputDevice = new WaveOutEvent())
             Console.WriteLine($"WHAT COMES AFTER {n}?!");
             Thread.Sleep(1000);
         }
-        Console.WriteLine("FOOOUUUURRR!!!!!");
+        foreach (char i in "FOOOOOOUUURRR!!!")
+        {
+            Console.Write(i);
+            Thread.Sleep(100);
+        }
         Thread.Sleep(10000);
     }
 }
