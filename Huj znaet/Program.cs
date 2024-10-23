@@ -1,7 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
 using NAudio.Wave;
-class Program{
+using(var audioFile = new AudioFileReader("ICOCTF.wav"))
+using(var outputDevice = new WaveOutEvent())
+{
+    
+}
+class Programm
+{
 public static void Main(){
    
     Console.WriteLine("ONE!");
