@@ -4,18 +4,25 @@ using NAudio.Wave;
 using(var audioFile = new AudioFileReader("ICOCTF.wav"))
 using(var outputDevice = new WaveOutEvent())
 {
-    Console.WriteLine("ONE!");
-    Console.WriteLine("WHAT COMES AFTER ONE?!");
-    Console.WriteLine("TWO!");
-    Console.WriteLine("WHAT COMES AFTER TWO ?!");
-    Console.WriteLine("THREE!");
-    Console.WriteLine("WHAT COMES THREE?!");
-    Console.WriteLine("FOOOUUUURRR!!!!!");
-     outputDevice.Init(audioFile);
+
+
+
+    outputDevice.Init(audioFile);
     outputDevice.Play();
+
+    string[] num = {"ONE", "TWO", "THREE"};
+
     while (outputDevice.PlaybackState == PlaybackState.Playing)
     {
-        Thread.Sleep(1000);
+        foreach (string n in num)
+        {
+            Console.WriteLine($"{n}!");
+            Thread.Sleep(1000);
+            Console.WriteLine($"WHAT COMES AFTER {n}?!");
+            Thread.Sleep(1000);
+        }
+        Console.WriteLine("FOOOUUUURRR!!!!!");
+        Thread.Sleep(10000);
     }
 }
 class Programm
