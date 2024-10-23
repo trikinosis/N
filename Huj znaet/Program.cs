@@ -4,7 +4,8 @@ using NAudio.Wave;
 using(var audioFile = new AudioFileReader("ICOCTF.wav"))
 using(var outputDevice = new WaveOutEvent())
 {
-    
+     outputDevice.Init(audioFile);
+    outputDevice.Play();
 }
 class Programm
 {
